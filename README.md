@@ -1,6 +1,6 @@
 ##yt_videos_batch_download_automation_project
 
-Personal project to automate video downloads in mp4 format
+Personal project to automate video downloads in mp4 format.
 
 Benefits:
 Saves time and effort
