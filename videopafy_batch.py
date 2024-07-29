@@ -1,5 +1,5 @@
 # sandy.g.cabanes
-# Title: videos using pafy
+# Title: videos using yt-dlp open source package
 # Description: video downloaded as mp4 in C:/temp/video folder
 # Date: July 18, 2024
 # ------------------------------------------------------------
