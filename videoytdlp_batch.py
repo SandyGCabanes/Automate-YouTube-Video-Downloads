@@ -1,7 +1,7 @@
 # sandy.g.cabanes
 # Title: videos using yt_dlp
 # Description: video downloaded as mp4 in C:/temp/video folder
-# Date: July 18, 2024
+# Date: July 18, 2024  (Not functioning as of 2025. See updated pytubefix version.)
 # ------------------------------------------------------------
 
 print("Initializing...")
