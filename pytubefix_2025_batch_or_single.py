@@ -16,6 +16,7 @@
 
 # -----------------------------------------------------------------------------
 import os
+import time
 import subprocess
 import ffmpeg
 from pytubefix import YouTube
