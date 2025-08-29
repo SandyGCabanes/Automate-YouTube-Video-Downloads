@@ -1,8 +1,58 @@
-##yt_videos_batch_download_automation_project
+SGC FLOWCHART FOR YOUTUBE DOWNLOADER APP PYTHON CODE
+┌───────────────────────┐       ┌───────────────────────┐                                                                                                  
+│                       │       │    If Batch Process   │                                                                                                  
+│         Start         │──────►│         Chosen        │                                                                                                  
+│                       │       │                       │                                                                                                  
+└───────────────────────┘       └───────────────────────┘                                                                                                  
+            │                               │                                                                                                              
+            │                               │                                                                                                              
+            ▼                               ▼                                                                                                              
+┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐                                                                  
+│     If Single URL     │       │                       │       │                       │                                                                  
+│   Processing Chosen   │       │   List of addresses   │──────►│      No list, End     │                                                                  
+│                       │       │                       │       │                       │                                                                  
+└───────────────────────┘       └───────────────────────┘       └───────────────────────┘                                                                  
+            │                               │                                                                                                              
+            │                               │                                                                                                              
+            ▼                               ▼                                                                                                              
+┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐                                                                  
+│                       │       │                       │       │  Loop through list of │                                                                  
+│       Input URL       │       │    Batch list found   │──────►│          urls         │                                                                  
+│                       │       │                       │       │                       │                                                                  
+└───────────────────────┘       └───────────────────────┘       └───────────────────────┘                                                                  
+            │                                                               │                                                                              
+            ┴───────────────────────────────────────────────────────────────┴                                                                              
+                                            ▼                                                                                                              
+                                ┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐                                  
+                                │                       │       │                       │       │     Download audio    │                                  
+                                │  Audio only or Video  │──────►│    If Video chosen    │──────►│       separately      │                                  
+                                │                       │       │                       │       │                       │                                  
+                                └───────────────────────┘       └───────────────────────┘       └───────────────────────┘                                  
+                                            │                               │                               │                                              
+                                            │                               │                               │                                              
+                                            ▼                               ▼                               │                                              
+                                ┌───────────────────────┐       ┌───────────────────────┐                   │                                              
+                                │                       │       │   Download video no   │                   │                                              
+                                │    If Audio chosen    │       │         sound         │                   │                                              
+                                │                       │       │                       │                   │                                              
+                                └───────────────────────┘       └───────────────────────┘                   │                                              
+                                            │                               │                               │                                              
+                                            │                               ┴───────────────────────────────┴                                              
+                                            ▼                                               ▼                                                              
+                                ┌───────────────────────┐                       ┌───────────────────────┐                                                  
+                                │                       │                       │                       │                                                  
+                                │  Download audio only  │                       │ Merge audio and video │                                                  
+                                │                       │                       │                       │                                                  
+                                └───────────────────────┘                       └───────────────────────┘                                                  
+                                            │                                               │                                                              
+                                            │                                               │                                                              
+                                            ▼                                               ▼                                                              
+                                ┌───────────────────────┐                       ┌───────────────────────┐                                                  
+                                │   Delete temp files,  │                       │   Delete temp files,  │                                                  
+                                │          End          │                       │          End          │                                                  
+                                │                       │                       │                       │                                                  
+                                └───────────────────────┘                       └───────────────────────┘
 
-Personal project to automate video downloads in mp4 format.
-
-Benefits:
-Saves time and effort
-No need to go to free video dowloader sites with lots of pop-ups
-
+This flowchart was made using my own app:  Unicode Flowchart Builder 
+https://github.com/SandyGCabanes/Unicode-Flowchart-Builder-App
+SGC. Beyond surveys. Data-driven insights.
