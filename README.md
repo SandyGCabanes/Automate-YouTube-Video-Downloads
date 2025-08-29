@@ -42,46 +42,4 @@ This script is an alternative to downloading the videos using the YouTube app.  
 ## Instructions and Pre-work
 This script assumes you can run python in the CLI or your favorite python IDE.  To use the batch processing feature, you have to create a file named list_of_addresses.txt in the same directory as the script. Each line in this file should contain a single YouTube video URL that you want to process.  Carefully watch the logs in the Console to find out which links are not working out.  I have personally used this to process more than 40 links in the list_of_addresses.txt file and it worked.
 
-## Workflow
-┌───────────────────────┐       ┌───────────────────────┐                  
-│         Start         │       │    If Batch Process   │    
-│                       │──────►│         Chosen        │  
-└───────────────────────┘       └───────────────────────┘
-            │                               │              
-            ▼                               ▼              
-┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐ 
-│     If Single URL     │       │                       │       │                       │ 
-│   Processing Chosen   │       │   List of addresses   │──────►│      No list, End     │ 
-│                       │       │                       │       │                       │ 
-└───────────────────────┘       └───────────────────────┘       └───────────────────────┘  
-            │                               │                                               
-            ▼                               ▼                                               
-┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐  
-│                       │       │                       │       │  Loop through list of │ 
-│       Input URL       │       │    Batch list found   │──────►│          urls         │   
-└───────────────────────┘       └───────────────────────┘       └───────────────────────┘   
-            │                                                               │
-            ┴───────────────────────────────────────────────────────────────┴        
-                                            ▼                                        
-                                ┌───────────────────────┐       ┌───────────────────────┐       ┌───────────────────────┐ 
-                                │  Audio only or Video  │       │    If Video chosen    │       │     Download audio    │  
-                                │                       │──────►│                       │──────►│       separately      │   
-                                └───────────────────────┘       └───────────────────────┘       └───────────────────────┘  
-                                            │                               │                               │              
-                                            ▼                               ▼                               │              
-                                ┌───────────────────────┐       ┌───────────────────────┐                   │        
-                                │    If Audio chosen    │       │   Download video no   │                   │
-                                │                       │       │         sound         │                   │       
-                                └───────────────────────┘       └───────────────────────┘                   │     
-                                            │                               │                               │      
-                                            │                               ┴───────────────────────────────┴       
-                                            ▼                                               ▼
-                                ┌───────────────────────┐                       ┌───────────────────────┐  
-                                │  Download audio only  │                       │ Merge audio and video │    
-                                └───────────────────────┘                       └───────────────────────┘     
-                                            │                                               │                
-                                            ▼                                               ▼                
-                                ┌───────────────────────┐                       ┌───────────────────────┐      
-                                │   Delete temp files,  │                       │   Delete temp files,  │    
-                                │          End          │                       │          End          │      
-                                └───────────────────────┘                       └───────────────────────┘
+
