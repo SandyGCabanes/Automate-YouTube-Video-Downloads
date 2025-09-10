@@ -26,7 +26,7 @@ This script is an alternative to downloading the videos using the YouTube app.  
 > YouTube always changes its metadata.  This script is provided as a guide.  It is the user's responsibility to re-configure the code if the metadata of videos changes.  For example, this script does not work for videos 3 years old or older.  You will have to use another package besides `pytubefix`.
 
 ## Background
-> I developed this script due to scheduling issues.  Downloading while online and using the Youtube app is the recommended method.  I also download using the YouTube app. However, sometimes there are internet outages. And it became more convenient to download the videos and delete them later to conserve memory. This uses existing python package called `pytubefix` for streaming access and existing package called`ffmpeg` for high-quality audio conversion and video/audio merging, ensuring reliable and flexible downloads.  
+> I developed this script due to scheduling issues.  While downloading using the Youtube app is the recommended method, sometimes there are internet outages. And it became more convenient to download the videos and delete them later to conserve memory. This python package called `pytubefix` is publicly available for streaming access.  The existing package called`ffmpeg` is for high-quality audio conversion and video/audio merging, ensuring reliable and flexible downloads.  
 
 ## Features
 ### User Input
@@ -40,6 +40,6 @@ This script is an alternative to downloading the videos using the YouTube app.  
 ##### URL (if 'single' is chosen): Paste the YouTube video URL directly into the prompt.
 
 ## Instructions and Pre-work
-This script assumes you can run python in the CLI or your favorite python IDE.  To use the batch processing feature, you have to create a file named list_of_addresses.txt in the same directory as the script. Each line in this file should contain a single YouTube video URL that you want to process.  Carefully watch the logs in the Console to find out which links are not working out.  
+This script assumes you can run python in the CLI or your favorite python IDE.  To use the batch processing feature, you have to create a file named list_of_addresses.txt in the same directory as the script. Each line in this file should contain a single YouTube video URL that you want to process.  Carefully watch the logs in the Console to find out which links are not downloading due to incompatible metadata structure vs. the package requirements.  This is especially true for older videos. 
 
 
